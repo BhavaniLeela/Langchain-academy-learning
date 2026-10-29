@@ -4,9 +4,6 @@
 
 ## Offered through [**LangChain Academy**](https://academy.langchain.com/)
 
-## My Course Certificate
-
-<!-- Upload your certificate image to this repository and update the path below. -->
 
 ## My Course Certificate
 
@@ -192,7 +189,7 @@ Course link: [LangChain Academy](https://academy.langchain.com/)
 **Bhavani Leela**
 
 - GitHub: [@BhavaniLeela](https://github.com/BhavaniLeela)
-- LinkedIn: [My LinkedIn Profile](ADD_YOUR_LINKEDIN_PROFILE_URL_HERE)
+- LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/bhavanisela/)
 
 ---
 
