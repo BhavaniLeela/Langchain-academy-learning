@@ -1,302 +1,199 @@
-# 🔗 Introduction to LangChain - Python
+# LangChain Academy – Introduction to LangChain
 
-## Introduction
+## By **LangChain**
 
-Welcome to LangChain Academy's **Introduction to LangChain** course!
+## Offered through [**LangChain Academy**](https://academy.langchain.com/)
 
-This repository is the companion to the course located [HERE](https://academy.langchain.com/courses/foundation-introduction-to-langchain-python).
+## My Course Certificate
 
----
+<!-- Upload your certificate image to this repository and update the path below. -->
 
-## 🚀 Setup
+## My Course Certificate
 
-### Prerequisites
+<p align="center">
+  <img src="./Certificate.PNG" alt="LangChain Academy Certificate" width="800"/>
+</p>
 
-- The [Chrome](https://www.google.com/chrome/) browser is recommended
-- [git](https://git-scm.com/install/) is recommended
-- A package/project manager: [uv](https://docs.astral.sh/uv/) (recommended) or [pip](https://pypi.org/project/pip/)
-- note: `uv` is also required in Module 2, Lesson 1 to run the MCP server with `uvx`
-- The course requires Python >=3.12, <3.14  If you use `uv`, it will take care of this for you. [More info](#python-virtual-environments)
-
-### Installation
-
-Download the course repository
-```bash
-# Clone the repo
-git clone --depth 1 https://github.com/langchain-ai/lca-lc-foundations.git
-cd lca-lc-foundations
-```
-
-Make a copy of example.env
-```bash
-# Create .env file
-cp example.env .env
-```
-
-Edit the .env file to include the keys below for [Models](#model-providers) and optionally [LangSmith](#getting-started-with-langsmith)
-
-- Get an OpenAI API Key [here](https://openai.com/index/openai-api/).  
-- Optional for Module1/Lesson1, get an Anthropic API Key [here](https://console.anthropic.com) and a Google API Key [here](https://ai.google.dev/gemini-api/docs/quickstart).
-- Optional, Create a [LangSmith](https://smith.langchain.com/) account and API Key.  
-
-```bash
-# Manual installs for checking: uv
-
-# Required
-OPENAI_API_KEY='your_openai_api_key_here'
-TAVILY_API_KEY='your_tavily_api_key_here'
-
-# optional, only used in Module1, Lesson 1 once
-ANTHROPIC_API_KEY='your_anthropic_api_key_here'
-GOOGLE_API_KEY='your_google_api_key_here'
-
-# Optional for evaluation and tracing
-LANGSMITH_API_KEY='your_langsmith_api_key_here'
-# uncomment to set tracing to true when you set up your LangSmith account
-#LANGSMITH_TRACING=true
-LANGSMITH_PROJECT=lca-lc-foundation
-# Uncomment the following if you are on the EU instance:
-#LANGSMITH_ENDPOINT=https://eu.api.smith.langchain.com
-```
-
-
-Make a virtual environment and install dependencies. [More info](#python-virtual-environments)
-
-<details open>
-<summary>Using uv (recommended)</summary>
-
-```bash
-uv sync
-```
-
-</details>
-
-<details>
-<summary>Using pip</summary>
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-</details>
-
-### Setup Verification
-
-After completing the Setup section, we recommend you run the following command to verify your environment.
-
-<details open>
-<summary>Using uv</summary>
-
-```bash
-uv run python env_utils.py
-```
-
-</details>
-
-<details>
-<summary>Using pip</summary>
-
-```bash
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-python env_utils.py
-```
-
-</details>
-
-[If the script flags issues, see this section below.](#setup-verification-issues)
-
-### Run Notebooks [More Info](#development-environment)
-
-<details open>
-<summary>Using uv (recommended)</summary>
-
-```bash
-uv run jupyter lab
-```
-
-</details>
-
-<details>
-<summary>Using pip</summary>
-
-```bash
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-jupyter lab
-```
-
-</details>
-
-### Run Studio (optional)
-
-Ensure you are in the notebooks/module-1 or notebooks/module-3 directory
-
- <details open>
-<summary>Using uv (recommended)</summary>
-
-```bash
-uv run langgraph dev
-```
-
-</details>
-
-<details>
-<summary>Using pip</summary>
-
-```bash
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-langgraph dev
-```
-
-</details>
-
-## 📚 Lessons
-This repository contains three Modules that serve as introductions to many of LangChain's most-used features.
+[View My Certificate](https://academy.langchain.com/certificates/85evyzxs8q)
 
 ---
 
-### Module 1: Create Agent
+## WHAT YOU WILL LEARN
 
-- Foundational models
-- Tools
-- Short-Term Memory
-- Multimodal Messages
-- Project: Personal Chef
+- Understand the fundamentals of Large Language Models (LLMs) and build applications using LangChain.
+- Work with chat models, prompts, message types, and structured outputs.
+- Integrate tools and enable LLMs to interact with external systems and APIs.
+- Understand conversation history, memory, and runtime context.
+- Build intelligent applications using LangChain's agent architecture.
+- Explore agent state, middleware, dynamic model selection, and multi-agent workflows.
+- Understand Model Context Protocol (MCP) and its role in connecting AI applications with external tools.
+- Explore Retrieval-Augmented Generation (RAG) and SQL-based interactions.
+- Implement human-in-the-loop workflows and understand how to control agent execution.
 
-### Module 2: Advanced Agent
+---
 
-- Model Context Protocol (MCP)
-- Context and State
-- Multi-Agent Systems
-- Project: Wedding Planner
+## About This Course
 
-### Module 3: Production-Ready Agent
+The **Introduction to LangChain** course by LangChain Academy provides a practical introduction to building applications powered by Large Language Models using the LangChain ecosystem.
 
-- What is Middleware?
-- Managing Long Conversations
-- Human In The Loop (HITL)
-- Dynamic Agents
-- Project: Email Assistant
-- Bonus: Agent Chat UI
+The course focuses on understanding how LLM applications work and how to connect language models with prompts, tools, memory, external data sources, and other components to develop intelligent applications.
 
-## 📖 Related Resources
+Through hands-on exercises and practical implementations, I explored the fundamentals of LangChain and its application-building capabilities, progressing towards more advanced concepts such as agents, middleware, runtime context, and multi-agent systems.
 
-### Setup Verification Issues
+This learning experience helped me understand how to move beyond basic LLM interactions and develop more structured, context-aware, and tool-enabled AI applications.
 
-**What the verification procedure checks:**
-- ✅ Python executable location and version (must be >=3.12, <3.14)
-- ✅ Virtual environment is properly activated
-- ✅ Required packages are installed with correct versions
-- ✅ Packages are in the correct Python version's site-packages
-- ✅ Environment variables (API keys) are properly configured
+---
 
-**Configuration Issues and Solutions:**
+## My Learning Journey
 
-<details>
-<summary>ImportError when running env_utils.py</summary>
+Throughout this course, I explored the following concepts and practical implementations.
 
-If you see an error like `ModuleNotFoundError: No module named 'dotenv'`, you're likely running Python outside the virtual environment.
+### MODULE 1 – LLM Fundamentals and LangChain Basics
 
-**Solution:**
-- Use `uv run python env_utils.py` (recommended), or
-- Activate the virtual environment first:
-  - macOS/Linux: `source .venv/bin/activate`
-  - Windows: `.venv\Scripts\activate`
+- Introduction to foundational language models.
+- Working with chat models and model providers.
+- Prompt templates and message handling.
+- Structured outputs and model responses.
+- Building practical LLM-powered applications.
+- Exploring tool integration and model interactions.
 
-</details>
+### MODULE 2 – Agents, Tools and Runtime Context
 
-<details>
-<summary>Environment Variable Conflicts</summary>
+- Understanding tools and tool calling.
+- Connecting LLMs with external tools and APIs.
+- Working with agent state and runtime context.
+- Managing conversation history and memory.
+- Understanding multimodal messages.
+- Exploring Model Context Protocol (MCP).
+- Building context-aware agent workflows.
 
-If you see a warning about "ENVIRONMENT VARIABLE CONFLICTS DETECTED", you have API keys set in your system environment that differ from your .env file. Since `load_dotenv()` doesn't override existing variables by default, your system values will be used.
+### MODULE 3 – Advanced Agent Development
 
-**Solutions:**
-1. Do nothing and accept the system environment variable value
-2. Unset the conflicting system environment variables for this shell session (commands provided in warning)
-3. Use `load_dotenv(override=True)` in your notebooks to force .env values to take precedence
-4. Update your .env file or shell init so the values are in agreement
+- Understanding agent architecture and execution.
+- Working with middleware.
+- Dynamic model selection.
+- Managing agent state and runtime configuration.
+- Human-in-the-loop workflows.
+- Exploring multi-agent systems.
+- Understanding advanced agent customization.
 
-</details>
+### BONUS LEARNING
 
-<details>
-<summary>LangSmith Tracing Errors</summary>
+- Retrieval-Augmented Generation (RAG).
+- SQL-based interactions and database querying.
+- Exploring practical applications of LLM-powered retrieval and data access.
 
-If you see "LANGSMITH_TRACING is enabled but LANGSMITH_API_KEY still has the example/placeholder value", you need to either:
-1. Set a valid LangSmith API key in your .env file, or
-2. Comment out or set `LANGSMITH_TRACING=false` in your .env file
+---
 
-Note: LangSmith is optional for evaluation and tracing. The course works without it.
+## Practical Exercises and Implementations
 
-</details>
+This repository contains my hands-on learning exercises, notebooks, and Python implementations from the LangChain Academy course.
 
-<details>
-<summary>Wrong Python Version</summary>
+Some of the areas explored include:
 
-If you see a warning about Python version not satisfying requirements, you need Python >=3.12 and <3.14.
+- Foundational model experimentation.
+- Personal Chef application.
+- Runtime context implementation.
+- Dynamic model selection.
+- Tool-enabled LLM workflows.
+- Agent and middleware experimentation.
+- RAG and SQL learning exercises.
 
-**Solution:**
-- If using `uv`: Run `uv sync` which will automatically install the correct Python version
-- If using pip: Install Python 3.12 or 3.13 using [pyenv](#python-virtual-environments) or from [python.org](https://www.python.org/downloads/)
+Each notebook and implementation represents part of my journey in understanding how to build practical LLM-powered applications.
 
-</details>
+---
 
-### Python Virtual Environments
+## Technologies and Tools
 
-Managing your Python version is often best done with virtual environments. This allows you to select a Python version for the course independent of the system Python version.
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| LLM Framework | LangChain |
+| Agent Framework | LangGraph |
+| Model Providers | Groq, Anthropic and other supported providers |
+| AI Concepts | LLMs, Agents, RAG, MCP |
+| Data & Retrieval | SQL, Embeddings, Vector Search |
+| Development Tools | VS Code, Jupyter Notebook |
+| Environment Management | uv, Python Virtual Environments |
+| Version Control | Git and GitHub |
 
-<details open>
-<summary>Using uv (recommended)</summary>
+---
 
-`uv` will install a version of Python compatible with the versions specified in the `pyproject.toml` in the `.venv` directory when running the `uv sync` specified above. It will use this version when invoking with `uv run`. For additional information, please see [uv](https://docs.astral.sh/uv/).
-</details>
+## Repository Structure
 
-<details>
-<summary>Using pyenv + pip</summary>
-
-If you are using pip instead of uv, you may prefer using pyenv to manage your Python versions. For additional information, please see [pyenv](https://github.com/pyenv/pyenv).
-
-```bash
-pyenv install 3.12
-pyenv local 3.12
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+```text
+langchain-academy-learning/
+│
+├── notebooks/
+│   ├── module-1/
+│   │   ├── 1.1_foundational_models.ipynb
+│   │   └── 1.5_personal_chef.py
+│   │
+│   ├── module-2/
+│   │   └── 2.2_runtime_context.ipynb
+│   │
+│   └── module-3/
+│       └── 3.4_dynamic_models.ipynb
+│
+├── bonus_rag.ipynb
+├── bonus_sql.ipynb
+├── pyproject.toml
+├── uv.lock
+├── .gitignore
+└── README.md
 ```
 
-</details>
+*Note: The structure above highlights selected learning files. The repository may contain additional course files and exercises.*
 
-### Model Providers
+---
 
-If you don't have an OpenAI API key, you can sign up [here](https://openai.com/index/openai-api/). The course primarily uses gpt-5-nano which is very inexpensive.  If desired, you may also obtain additional API keys for [Anthropic](https://console.anthropic.com) or [Google](https://ai.google.dev/gemini-api/docs/quickstart).
+## Key Takeaways
 
-This course has been created using particular models and model providers.  You can use other providers, but you will need to update the API keys in the .env file and make some necessary code changes. LangChain supports many chat model providers. [More Info](https://docs.langchain.com/oss/python/integrations/providers/all_providers).
+Through this course, I strengthened my understanding of:
 
-Tavily is a search provider that returns search results in an LLM-friendly way. They have a generous free tier. [Tavily](https://tavily.com)
+- How LLMs work within application architectures.
+- How to build applications using LangChain.
+- How agents reason and interact with tools.
+- How to manage context, state, and conversation history.
+- How middleware can customize agent behaviour.
+- How RAG can connect LLMs with external knowledge.
+- How to design more flexible and context-aware AI workflows.
 
-### Getting Started with LangSmith
+Most importantly, this course helped me strengthen the practical foundation required to explore **Generative AI, Agentic AI, and advanced AI application development**.
 
-- Create a [LangSmith](https://smith.langchain.com/) account
-- Create a LangSmith API key
+---
 
-<img width="600" alt="LangSmith Dashboard" src="https://github.com/user-attachments/assets/e39b8364-c3e3-4c75-a287-d9d4685caad5" />
+## Course Information
 
-<img width="600" alt="LangSmith API Keys" src="https://github.com/user-attachments/assets/2e916b2d-e3b0-4c59-a178-c5818604b8fe" />
+- **Course:** Introduction to LangChain
+- **Platform:** LangChain Academy
+- **Course Provider:** LangChain
+- **Programming Language:** Python
+- **Learning Format:** Online learning and hands-on exercises
+- **Certificate:** Completed
 
-- Update the .env file you created with your new LangSmith API Key.
-- Check that LANGSMITH_TRACING is uncommented and set to true.
+Course link: [LangChain Academy](https://academy.langchain.com/)
 
-For more information on LangSmith, see our docs [here](https://docs.langchain.com/langsmith/home).
+---
 
-**Note:** If you enable LangSmith tracing by setting `LANGSMITH_TRACING=true` in your .env file, make sure you have a valid `LANGSMITH_API_KEY` set. The environment verification script (`env_utils.py`) will warn you if tracing is enabled without a valid key.
+## My Certificate Details
 
-### Environment Variables
+- **Certificate:** LangChain Academy – Introduction to LangChain
+- **Certificate ID:** `85evyzxs8q`
+- **Issued:** October 2026
+- **Valid Until:** October 28, 2028
 
-This course uses the [dotenv](https://pypi.org/project/python-dotenv) module to read key-value pairs from the .env file and set them in the environment in the Jupyter notebooks. They do not need to be set globally in your system environment.
+[View Course Platform](https://academy.langchain.com/)
 
-**Note:** If you have API keys already set in your system environment, they may conflict with the ones in your .env file. The `env_utils.py` verification script will detect and warn you about such conflicts. By default, `load_dotenv()` does not override existing environment variables.
+---
 
+## Author
 
-### Development Environment
+**Bhavani Leela**
 
-The course uses [Jupyter](https://jupyter.org/) notebooks. The Jupyter package is installed in the virtual environment and can be run as described above. Jupyter notebooks can also be edited and run in VSCode or other VSCode variants such as Windsurf or Cursor.
+- GitHub: [@BhavaniLeela](https://github.com/BhavaniLeela)
+- LinkedIn: [My LinkedIn Profile](ADD_YOUR_LINKEDIN_PROFILE_URL_HERE)
+
+---
+
+⭐ This repository documents my continuous learning journey in LangChain, Generative AI, and Agentic AI through practical exercises and implementations.
